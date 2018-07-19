@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+
+body{
+	margin:0;
+	background-image: 
+		linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+		url(homeBackGroundImage.png);
+	background-color: white;
+	background-size: cover;
+	background-position: center;
+}
+
+
+header h1{
+	color: white;
+	display: inline-block;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-size: 30px;
+	float: left;
+	padding-right: 50px;
+	padding-left: 15px;
+}
+
+
+.navbar {
+    overflow: hidden;
+   	background-color:black;
+    font-family: 'Oswald', sans-serif;
+	border-collapse:collapse;
+    box-shadow:#d0d0d0 0px 0px 0px 1px;
+	position:fixed;
+	z-index: 1;
+	margin-top: -0;
+	width:100%;
+	
+}
+
+.navbar a {
+    float: left;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+.navbar b {
+    float: left;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 4px 16px;
+    text-decoration: none;
+	font-weight: normal;
+}
+
+.navbar .active {
+	color:DeepSkyBlue;
+	border: 2px solid white;
+	
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+	background-color:black;
+}
+
+.dropdown .dropbtn {
+    font-size: 25px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 16px;
+    background-color: black;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown .active{
+	color:DeepSkyBlue;
+	border: 2px solid white;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+	color:DeepSkyBlue;
+    border: 2px solid white;
+	transition: .5s ease;
+	background-color:black;
+}
+.navbar b:hover, .dropdown:hover .dropbtn {
+   
+}
+
+.dropdown-content {
+    display: none;	
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	border-collapse:collapse;
+    box-shadow:#d0d0d0 0px 0px 0px 1px;
+	background-color:black;
+	position: relative;
+	z-index:100;
+}
+
+.dropdown-content a:hover {
+    color:DeepSkyBlue;
+    border: 2px solid white;
+	transition: .5s ease;
+	
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.hero{
+	position:absolute;
+	width: 400px;
+	margin-left: 250px;
+	margin-top: 100px;
+	height: 0px;
+	
+}
+
+h2{
+	color: white;
+	text-transform: uppercase;
+	font-size: 28px;
+	text-align: center;
+}
+
+.button{
+	margin-top:30px;
+	margin-left: 22px;
+
+}
+
+.btn{
+	border: 1px solid white;
+	padding: 10px 30px;
+	color: white;
+	text-decoration: none;
+	margin-right: 22;
+	font-size: 20px;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	
+}	
+
+.btn-one{
+	font-family: 'Oswald', sans-serif;
+}
+
+.btn-one:hover{
+	color: black;
+	font-size: 28;
+	font-weight: bold;
+	background-color: DeepSkyBlue;
+	transition: all 0.5s ease-in;
+}
+
+.introduction{
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+	max-width: 70em;
+	margin-left:210;
+	margin:right;
+	position: relative;
+	z-index:-1;
+	
+}
+
+.introduction > h2{
+	text-transform: none;
+	color: #0098CC;
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+	font-size:30;
+	text-align:left;
+	padding-left: 10;
+}
+
+.introduction >img{
+	border-radius:50%;
+	float:left;
+	-webkit-filter: contrast(180%);filter: contrast(120%);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 25px;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-right: 30px;
+	margin-left:10;
+	margin-top:-20;
+}
+
+.introduction >hr{
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+
+.introduction > p{
+	color: black;
+	font-weight: 300;
+	font-size:18;
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+	letter-spacing: 0.05em;
+	padding-left:25;
+}
+
+
+.sidenav > a:visited{
+	color:purple;
+	
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 99;
+    top: 62;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+	border-style: solid;
+	border-color: white;
+	border-width:medium;
+
+}
+
+.sidenav >a {
+    padding: 6px 8px 6px 16px;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+	font-family: 'Oswald', sans-serif;
+}
+
+.sidenav >a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav >h1{
+	font-size:28px;
+	text-decoration:underline ;
+	text-align: left;
+	padding-left: 10px;
+	color: lightgrey;
+	font-family: 'Oswald', sans-serif;
+}
+.sidenav >h2{
+	font-size:14px;
+	text-align: left;
+	padding-left: 10px;
+	color: lightgrey;
+	font-family: 'Oswald', sans-serif;
+}
+
+.sidenav > p{
+	padding-left: 10px;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+}
+
+.space-from-top-nav {
+	padding-top:75px;
+}
+

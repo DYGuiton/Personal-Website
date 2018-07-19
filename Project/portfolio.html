@@ -1,48 +1,60 @@
 <html>
 <head>
 <title>D'Angelo Guiton | Artist Portfolio | CS Portfolio</title>
-<link href= "style2.css" rel= "stylesheet" type= "text/css">
+<link href= "styleIndex.css" rel= "stylesheet" type= "text/css">
 </head>
 
 
 <body>
 	<div class="navbar">
 		<b href="">D'Angelo Guiton</b>
-		<a href="#home">HOME</a>
+		<a class="active" href="">HOME</a>
 	<div class="dropdown">
-		<button class="dropbtn active">PORTFOLIO 
+		<button class="dropbtn">PORTFOLIO 
 			<i class="fa fa-caret-down"></i>
 		</button>
 		<div class="dropdown-content">
-			<a href="#">Programming</a>
-			<a href="#">Art and Animation</a>
+			<a href="https://github.com/DYGuiton">Programming</a>
+			<a href="http://www.willamette.edu/~dguiton/portfolio.html">Art and Animation(In-Progress)</a>
 		</div>
 	</div> 
-		<a href="#news">ABOUT ME</a>
+		<a href="http://www.willamette.edu/~dguiton/aboutme.html">ABOUT ME</a>
 	</div>
-	
-	<h1>
-		<nav class="w3-sidebar w3-bar-block w3-light-grey" style="width:100px">
-			<button class="w3-bar-item w3-button" onclick="openCity(event, 'London')">London</button> 
-			<button class="w3-bar-item w3-button" onclick="openCity(event, 'Paris')">Paris</button> 
-			<button class="w3-bar-item w3-button" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-		</nav>
-	
-	</h1>
-	
-	<div class="hero">
-		<h2>Welcome! My name is 
-		<span style = "color: DeepSkyBlue">D'Angelo Guiton</span>
-		and I specialize in:</h2>
+			<div class="sidenav">
+		<h1> Contact </h1>
+		<h2> Email: </h2>
+		<a href="mailto:dyguiton@gmail.com" target="_top">dyguiton@gmail.com</a>
+		<h2> Other: </h2>
+		<a href="https://www.linkedin.com/in/d-angelo-guiton-3441b6139/">Linked-In</a>
+		<a href="https://github.com/DYGuiton">GitHub</a>
 		
-			<div class ="button">
-				<a href = "https://github.com/DYGuiton" class = "btn btn-one"> Software Development</a>
-				<br />
-				<a href = "" class = "btn btn-one"> Artistry</a>
-			</div>
 		</div>
-	
+		
+		
+			
 </body>	
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Thesis</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/New Test Builds.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">Thesis</div>
+      </div>
+    </div>
+  </body>
 </html>
 
 
